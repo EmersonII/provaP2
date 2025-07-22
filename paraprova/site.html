@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<title>Estudo eventos</title>
+</head>
+<body>
+
+	<div class="papai">
+		
+		<div class="quadrado1"></div>
+		<div class="quadrado2"></div>
+		<div class="quadrado3"></div>
+		<div class="quadrado4"></div>
+		<div class="quadrado5"></div>
+
+		
+	</div>
+
+<div class="texto"></div>
+
+<div class="duplicata"></div>
+
+<div class="imagem"></div>
+
+		<script>
+	document.querySelector('.quadrado1').addEventListener('click', function() {
+		var q1 = document.querySelector('.quadrado1');
+		q1.style.backgroundColor = (q1.style.backgroundColor === 'black') ? 'red' :'black';
+	});
+	document.querySelector('.quadrado2').addEventListener('dblclick', function() {
+		var texto1 = document.querySelector('.texto')
+		texto1.textContent = ('Voce fez um click duplo no quadrado 2');
+			});
+	document.querySelector('.quadrado3').addEventListener('mouseover', function() {
+		var texto1 = document.querySelector('.texto')
+		texto1.textContent = ('');
+		var texto2 = document.querySelector('.quadrado3')
+		texto2.textContent = ('Apagar texto');
+			});
+	document.querySelector('.quadrado4').addEventListener('click', function() {
+		var duplicata = document.querySelector('.duplicata');
+		var papai = document.querySelector('.papai');
+		duplicata.className = papai.className
+		duplicata.innerHTML = papai.innerHTML
+	});
+	document.querySelector('.quadrado5').addEventListener('click', function() {
+		var img = document.querySelector('.imagem')
+		var imgContainer = document.querySelector('.imagem');
+		imgContainer.innerHTML = (imgContainer.innerHTML === '') 
+ 		? '<img src="meme.png" alt="Minha imagem" style="width:200px;">' 
+  		: '';
+		});
+document.querySelector('.quadrado5').addEventListener('click', function(){
+	var q5 = document.querySelector('.quadrado5');
+	q5.style.backgroundColor = (q5.style.backgroundColor === "lightgreen") ?"darkred" : "lightgreen";
+});	
+</script>
+</body>
+
+</html>

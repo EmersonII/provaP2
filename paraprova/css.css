@@ -1,0 +1,42 @@
+.papai{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 200px;
+	align-items: center;
+}
+.quadrado1{
+	width: 180px;
+	height: 180px;
+	background-color: black;
+	margin-left: 120px;
+}
+.quadrado2{
+	width: 180px;
+	height: 180px;
+	background-color: green;
+	margin-left: 100px;
+}
+.quadrado3{
+	width: 180px;
+	height: 180px;
+	background-color: grey;
+	margin-left: 100px;
+	justify-content: center;
+}
+.quadrado4{
+	width: 180px;
+	height: 180px;
+	background-color: blue;
+	margin-left: 100px;
+}
+.quadrado5{
+	width: 180px;
+	height: 180px;
+	background-color: lightgreen;
+	margin-left: 100px;
+}
+.texto {
+  margin-top: 20px;
+  font-size: 18px;
+}
